@@ -7,9 +7,9 @@
 	<name>uqbar-class-descriptor</name>
 	
 	<parent>
-		<groupId>uqbar</groupId>
+		<groupId>org.uqbar-project</groupId>
 		<artifactId>uqbar-parent-project</artifactId>
-		<version>1.6</version>
+		<version>1.9</version>
 	</parent>
 	
 	<properties>
