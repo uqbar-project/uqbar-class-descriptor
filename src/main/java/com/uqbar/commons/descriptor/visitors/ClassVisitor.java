@@ -121,7 +121,7 @@ public interface ClassVisitor {
 	 * y no parece ser util, pues lo logico es procesar por igual todos los parametros de un metodo.
 	 * 
 	 * @param type
-	 * @param method
+	 * @param constructor
 	 * @param index indice del parametro
 	 * @param annotation
 	 */
@@ -145,7 +145,7 @@ public interface ClassVisitor {
 	 * - ambas combinaciones.
 	 * 
 	 * @param type
-	 * @param constructor
+	 * @param element
 	 */
 	void constructorAnnotation(Class type, Constructor element, Annotation annotation);
 	
@@ -164,8 +164,8 @@ public interface ClassVisitor {
 	 * 
 	 * Este metodo se puede sobreescribir con la annotation Type
 	 * 
-	 * @param clazz
-	 * @param superClass
+	 * @param type
+	 * @param superType
 	 */
 	void type(Class type, Class superType);
 	

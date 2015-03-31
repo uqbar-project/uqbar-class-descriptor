@@ -33,8 +33,8 @@ public class ClassDescriptorAnnotationUtils {
 	}
 
 	/**
-	 * @param method
-	 * @param message message or null, for not check isAnnotationPresent
+	 * @param constructor
+	 * @param types message or null, for not check isAnnotationPresent
 	 * @return Si el Constructor es para estos tipos.
 	 */
 	public static boolean isForThis(Constructor constructor, Types types) {
@@ -60,8 +60,8 @@ public class ClassDescriptorAnnotationUtils {
 	}
 
 	/**
-	 * @param field
-	 * @param attribute
+	 * @param annotation
+	 * @param attributeName
 	 * @return Si el field corresponde a ese atributo
 	 */
 	public static boolean isForThis(Annotation annotation, String attributeName, AnnotationAttribute annotationAttribute) {

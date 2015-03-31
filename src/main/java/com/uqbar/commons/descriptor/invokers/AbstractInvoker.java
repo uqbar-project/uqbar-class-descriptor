@@ -101,7 +101,7 @@ public abstract class AbstractInvoker implements Invoker {
 	 * Determina si este metodo es un caso particular que debe ser invocado por el invoker
 	 * 
 	 * @param method  method to evaluate
-	 * @param parametersTypes parameters of this method. Es para evitar que todas las subclases necesiten hacer method.getParameterTypes()
+	 * @param parameterTypes parameters of this method. Es para evitar que todas las subclases necesiten hacer method.getParameterTypes()
 	 * @return if this method must execute
 	 */
 	protected abstract boolean mustExecute(Method method, Class<?>[] parameterTypes);

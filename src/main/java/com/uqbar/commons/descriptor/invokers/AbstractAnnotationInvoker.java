@@ -40,14 +40,13 @@ public abstract class AbstractAnnotationInvoker <T extends AnnotatedElement, A e
 	
 	/**
 	 * @return El tipo de annotation asociada a este AnnotedElement 
-	 * @see {@link Type} {@link Message} {@link Types}  {@link Attribute}
 	 */
 	public abstract Class<A> getElementAnnotationType();
 
 	/**
 	 * Construye el array con los paremtros que se utilizaran en la invocacion
 	 * 
-	 * @param Metodo que se invocara
+	 * @param method Metodo que se invocara
 	 * @return un array con los parametros
 	 */
 	@Override
@@ -76,7 +75,7 @@ public abstract class AbstractAnnotationInvoker <T extends AnnotatedElement, A e
 	/**
 	 * se indico explicitamente que ese metodo es para otro element
 	 * @param method metodo candidato a invocar
-	 * @return !this.isForAllElements(method) && !this.isForThisElement(method);
+	 * @return Si es para todos los otros elementos menos este.
 	 */	
 	protected boolean isForOtherElement(Method method) {
 		return !this.isForAllElements(method) && !this.isForThisElement(method);
