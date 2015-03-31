@@ -1,16 +1,16 @@
 language: java
 after_success:
 - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && mvn deploy
-- '[[ $TRAVIS_TAG == v[0-9.]* ]] && { mvn clean deploy -Prelease };'
+- "[[ $TRAVIS_TAG == v[0-9.]* ]] && { mvn clean deploy -Prelease };"
 before_install:
-- openssl aes-256-cbc -K $encrypted_41c68c62ba72_key -iv $encrypted_41c68c62ba72_iv
+- openssl aes-256-cbc -K $encrypted_9b8b5fb6d9c3_key -iv $encrypted_9b8b5fb6d9c3_iv
   -in maven_files.tar.enc -out maven_files.tar -d
 - tar xvf maven_files.tar
-- mv settings.xml ~/.m2/settings.xml  
+- mv settings.xml ~/.m2/settings.xml
 - gpg --import travis.gpg
 notifications:
   email:
   - tesonep@gmail.com
 cache:
   directories:
-  - $HOME/.m2
+  - "$HOME/.m2"
