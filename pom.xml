@@ -12,14 +12,12 @@
 		<version>1.9</version>
 	</parent>
 	
-	<properties>
-		<scm.svnPath>svn/uqbar/commons/uqbar-class-descriptor</scm.svnPath>
-	</properties>
 
 	<scm>
-		<connection>scm:svn:http://uqbar.no-ip.org/svn/uqbar/commons/uqbar-class-descriptor/trunk</connection>
-		<developerConnection>scm:svn:http://uqbar.no-ip.org/svn/uqbar/commons/uqbar-class-descriptor/trunk</developerConnection>
-		<url>http://uqbar.no-ip.org/svn/uqbar/commons/uqbar-class-descriptor/trunk</url>
+		<connection>scm:git:${scm.gitServer}/uqbar-class-descriptor</connection>
+		<developerConnection>scm:git:${scm.gitServer}/uqbar-class-descriptor</developerConnection>
+		<url>scm:git:${scm.gitServer}/uqbar-class-descriptor</url>
+		<tag>HEAD</tag>
 	</scm>
 	
 	<dependencies>
@@ -44,4 +42,7 @@
              </plugin>
 		</plugins>
 	</build>
+	<properties>
+		<scm.gitServer>https://github.com/uqbar-project</scm.gitServer>
+	</properties>
 </project>
