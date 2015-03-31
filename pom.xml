@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<artifactId>uqbar-class-descriptor</artifactId>
-	<version>1.3.2-SNAPSHOT</version>
+	<version>1.3.2</version>
 	<packaging>jar</packaging>
 	<name>uqbar-class-descriptor</name>
 	
@@ -17,7 +17,7 @@
 		<connection>scm:git:${scm.gitServer}/uqbar-class-descriptor</connection>
 		<developerConnection>scm:git:${scm.gitServer}/uqbar-class-descriptor</developerConnection>
 		<url>scm:git:${scm.gitServer}/uqbar-class-descriptor</url>
-		<tag>HEAD</tag>
+		<tag>v1.3.2</tag>
 	</scm>
 	
 	<dependencies>
